@@ -7,7 +7,7 @@ const CenterSelector = () => {
     const [error, setError] = useState(null); // Error state
 
     useEffect(() => {
-        const fetchCenters = async() => {
+        const fetchCenters = async () => {
             try {
                 const response = await fetch('/api/centers');
                 if (!response.ok) {
@@ -30,26 +30,23 @@ const CenterSelector = () => {
     };
 
     if (loading) {
-        return <div > Loading... < /div>; / / Show loading message
+        return <div>Loading...</div>; // Show loading message
     }
 
     if (error) {
-        return <div > { error } < /div>; / / Show error message
+        return <div>{error}</div>; // Show error message
     }
 
-    return ( <
-            select value = { selectedCenter }
-            onChange = { handleCenterChange } >
-            <
-            option value = "" > Select Center < /option> {
-            centers.map((center) => ( <
-                option key = { center._id }
-                value = { center._id } > { center.name } <
-                /option>
-            ))
-        } <
-        /select>
-);
+    return (
+        <select value={selectedCenter} onChange={handleCenterChange}>
+            <option value="">Select Center</option>
+            {centers.map((center) => (
+                <option key={center._id} value={center._id}>
+                    {center.name}
+                </option>
+            ))}
+        </select>
+    );
 };
 
 export default CenterSelector;
