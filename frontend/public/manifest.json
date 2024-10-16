@@ -1,0 +1,19 @@
+{
+    "short_name": "Sports Booking App",
+    "name": "Sports Booking App",
+    "icons": [{
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#f9f9f9",
+    "display": "standalone",
+    "theme_color": "#4CAF50"
+}

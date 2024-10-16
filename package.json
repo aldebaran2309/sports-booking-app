@@ -1,0 +1,23 @@
+{
+    "name": "sports-booking-app",
+    "version": "1.0.0",
+    "description": "sports booking app for multiple locations , each booking slot has a 60 mins each",
+    "main": "index.js",
+    "scripts": {
+        "test": "module",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aldebaran2309/sports-booking-app.git"
+    },
+    "keywords": [
+        "\"sports\""
+    ],
+    "author": "app\"",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aldebaran2309/sports-booking-app/issues"
+    },
+    "homepage": "https://github.com/aldebaran2309/sports-booking-app#readme"
+}
